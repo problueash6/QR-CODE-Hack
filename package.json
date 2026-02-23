@@ -1,0 +1,27 @@
+{
+  "name": "qr-code-hack",
+  "version": "1.0.0",
+  "description": "dd",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/problueash6/QR-CODE-Hack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/problueash6/QR-CODE-Hack/issues"
+  },
+  "homepage": "https://github.com/problueash6/QR-CODE-Hack#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "multer": "^2.0.2"
+  }
+}

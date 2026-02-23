@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberSlash</title>
+  <style>
+    body { font-family: sans-serif; display:flex; flex-direction:column; align-items:center; background:#111; color:#0f0; }
+    video, canvas { border: 2px solid #0f0; margin: 10px; }
+    canvas { display:none; }
+    button { margin:10px; padding:12px 24px; background:#0f0; color:#111; font-size:1rem; border:none; cursor:pointer; border-radius:6px; }
+    #qr-code { margin:20px; max-width:200px; }
+    #status { margin:10px; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>📷 CyberSlash</h1>
+
+  <video id="preview" width="320" height="240" autoplay muted playsinline></video>
+  <canvas id="frame-canvas" width="320" height="240"></canvas>
+
+  <button onclick="captureAndUpload()">Capturer + Générer QR</button>
+
+  <p id="status">En attente...</p>
+  <img id="qr-code" alt="" />
+
+  <!-- QR code generator (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>
